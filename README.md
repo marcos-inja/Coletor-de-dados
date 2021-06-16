@@ -10,7 +10,7 @@ Um coletor de dados é um programa que pega dados de algum site para depois ser 
 
 Use as essas variaveis `mes` e `ano` para definir a data que o os dados seram pegos, não use datas futuras para não ter dados vazios.
 
-```
+```javascript
 //Use as variáveis ano e mes para alterar a data do arquivo que vai ser baixado
 const ano = "2020"
 const mes = "12"
