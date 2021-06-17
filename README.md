@@ -4,7 +4,7 @@ O site que os dados foram pegos, pode ser visto [*aqui*](https://sistemas.mpal.m
 
 ## :triangular_flag_on_post: Introdução
 
-Um coletor de dados é um programa que pega dados de algum site para depois ser consumido por outro progrma ou site.
+Um coletor de dados é um programa que pega dados de algum site para depois ser consumido por outro programa ou site.
 
 ## 🧐 Como usar
 
