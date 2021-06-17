@@ -12,8 +12,8 @@ Use as variaveis `year` e `month` para definir a data que o os dados seram pegos
 
 ```javascript
 //Use as variáveis ano e mes para alterar a data do arquivo que vai ser baixado
-const year = "colequeUmAno"
-const month = "coloqueUmMes"
+var year = "colequeUmAno"
+var month = "coloqueUmMes"
 ```
 use `node index.js` no terminal na pasta do projeto para rodar.
 
