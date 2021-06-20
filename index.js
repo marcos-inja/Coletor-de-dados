@@ -29,8 +29,8 @@ function download(url,year,month) {
 }
 
 //Use as variáveis month e year para alterar a data do arquivo que vai ser baixado
-var month = "11"
-var year = "2020"
+var month = "6"
+var year = "2021"
 
 const url = "https://sistemas.mpal.mp.br/transparencia/contracheque/index/65?tipo=membrosativos&mes="
             + month +
