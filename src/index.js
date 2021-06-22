@@ -5,10 +5,10 @@ const base_URL = "https://sistemas.mpal.mp.br/transparencia/contracheque/index/"
 const local = "downloads/"
 
 function download(url,year,month) {
-  const filename = year +
-               "_"
-               + month +
-               "_membros_ativos.JSON" 
+  const filename = year 
+                   + "_"
+                   + month
+                   + "_membros_ativos.JSON" 
 
   const req = https.get(url, (res) => {
     const archive = fs.createWriteStream(local+filename)
@@ -39,12 +39,12 @@ function download(url,year,month) {
 var month = "5"
 var year = "2021"
 
-const url = base_URL + 
-            "65?tipo=membrosativos&mes="
-            + month +
-            "&ano="
-            + year +
-            "&busca=&download=json"
+const url = base_URL 
+            + "65?tipo=membrosativos&mes="
+            + month
+            + "&ano="
+            + year
+            + "&busca=&download=json"
 
 console.log("Aguarde...")
 download(url,year,month)
