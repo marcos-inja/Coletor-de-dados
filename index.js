@@ -1,6 +1,9 @@
 const https = require("https")
 const fs = require("fs")
 
+const base_URL = "https://sistemas.mpal.mp.br/transparencia/contracheque/index/"
+const local = "dowmloads/"
+
 function download(url,year,month) {
   const filename = year +
                "_"
@@ -8,7 +11,7 @@ function download(url,year,month) {
                "_membros_ativos.JSON" 
 
   const req = https.get(url, (res) => {
-    const archive = fs.createWriteStream(filename)
+    const archive = fs.createWriteStream(local+filename)
     res.pipe(archive)
 
     archive.on("error", (err) => {
@@ -28,11 +31,16 @@ function download(url,year,month) {
   })
 }
 
-//Use as variáveis month e year para alterar a data do arquivo que vai ser baixado
-var month = "6"
+/**
+ * Use as variáveis month e year para alterar a data do arquivo que vai ser baixado
+ * Coloque o numero do month sem o zero na frente
+ */
+
+var month = "5"
 var year = "2021"
 
-const url = "https://sistemas.mpal.mp.br/transparencia/contracheque/index/65?tipo=membrosativos&mes="
+const url = base_URL + 
+            "65?tipo=membrosativos&mes="
             + month +
             "&ano="
             + year +
