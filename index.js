@@ -2,7 +2,7 @@ const https = require("https")
 const fs = require("fs")
 
 const base_URL = "https://sistemas.mpal.mp.br/transparencia/contracheque/index/"
-const local = "dowmloads/"
+const local = "downloads/"
 
 function download(url,year,month) {
   const filename = year +
